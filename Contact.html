@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote - Happy Home by Enela</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🏠 Happy Home by Enela</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Request a Quote</h1>
+    <form action="https://formspree.io/f/xqaqkzag" method="POST">
+      <label>Name* <input type="text" name="name" required></label>
+      <label>Email* <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone"></label>
+      <label>Service* 
+        <select name="service" required>
+          <option>Home Organization</option>
+          <option>Moving</option>
+          <option>Vacation Home Watch</option>
+          <option>Home Management</option>
+          <option>Holiday Services</option>
+          <option>Post-Holiday Clean Up</option>
+          <option>Digital Photo Service</option>
+        </select>
+      </label>
+      <label>Details <textarea name="details" rows="5"></textarea></label>
+      <button type="submit">Send Request</button>
+    </form>
+  </main>
+</body>
+</html>
